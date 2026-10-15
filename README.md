@@ -6,7 +6,7 @@ Analyze which countries supply a product to an Arab market, where Arab exports g
 
 English is the default language for this release, its research documentation and the explorer. Arabic is available as an optional interface language.
 
-[Open the explorer](https://huggingface.co/spaces/Bayanat-Labs/arab-trade-exposure) · [Source and pipeline](https://github.com/Bayanat-Labs/arab-trade-exposure) · [Worked examples](docs/USE_CASES.md) · [Methodology](docs/METHODOLOGY.md) · [Validation](reports/validation.json)
+[Download the dataset](https://huggingface.co/datasets/Bayanat-Labs/arab-trade-exposure) · [Open the explorer](https://huggingface.co/spaces/Bayanat-Labs/arab-trade-exposure) · [Source and pipeline](https://github.com/Bayanat-Labs/arab-trade-exposure) · [Worked examples](docs/USE_CASES.md) · [Methodology](docs/METHODOLOGY.md) · [Validation](reports/validation.json)
 
 ## What is included
 
@@ -108,3 +108,7 @@ Please cite Gaulier, G. and Zignago, S. (2010), *BACI: International Trade Datab
 مجموعة بيانات لتحليل التجارة السلعية للدول العربية خلال 1995–2024، مبنية على إصدار ثابت من قاعدة BACI التابعة لمركز CEPII. تتضمن التدفقات التجارية ومؤشرات تركز مصادر الاستيراد ووجهات التصدير، مع الحفاظ على القيم الأصلية وإمكانية تتبع كل سجل إلى مصدره. تُحفظ بيانات السودان السابق منفصلة عن السودان الحالي. غياب سجل لا يعني بالضرورة انعدام التجارة، ولا تُعد مؤشرات التركز تقديرًا لاحتمال النقص أو الاعتماد على الاستيراد لتلبية الاستهلاك المحلي.
 
 </details>
+
+## About Bayanat Labs
+
+Built by [Bayanat Labs](https://www.bayanatlabs.com), an Arabic data and evaluation company. Explore our [Arabic datasets and services](https://www.bayanatlabs.com/products), read our [research and insights](https://www.bayanatlabs.com/insights), or [discuss a data project](https://www.bayanatlabs.com/company#contact).
