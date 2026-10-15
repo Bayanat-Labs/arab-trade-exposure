@@ -1,0 +1,56 @@
+{
+  "review_type": "independent semantic and failure-path fixture tests",
+  "run_at_utc": "2026-10-15T15:59:30.758835+00:00",
+  "result": "passed",
+  "test_count": 18,
+  "runtime_seconds": 1.778,
+  "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+  "full_production_corpus_validated_by_this_report": false,
+  "tested_file_sha256": {
+    "pipeline/ingest.py": "4f4bd4c7609021be8f36258a592299f1f8982df5b280d57105a434b9bbcbc17b",
+    "pipeline/derive.py": "a7a11980c0e054826e2ad8aad890b51d5ab0eb77f130bd6842f98d4d4a2c5ee3",
+    "country_scope.csv": "727b4aba7432b4dfcbd3536dfaa3c619e78ef76a41e144ff674bb86ee5860209",
+    "country_scope_policy.json": "da8ac9932d57ad841616aa62088f8c065f3fe0edd957f04c8978446707de1f07",
+    "source_metadata/country_codes_V202601.csv": "c6892f28bea23d689b29b074d299cea7f5196c708b03026fbe419fa4ecb4e820",
+    "source_metadata/product_codes_HS92_V202601.csv": "51bcc9e8946b5efb0a7c7e9756c42e72c35861f32a7a7059e2d768a0f2f61166",
+    "tests/test_semantics.py": "99e743bd1f9a7c468429d2f7e59bf1138574986a542fdac4866b1f95ceebf0c8",
+    "pipeline/validate.py": "9ddbcad7897c1f90404ca9fa373dc46e9d8e21c061d57fb822e69080c84068cc",
+    "tests/test_validator.py": "2db83bf9c968deaad2ad9beda663f951d955423d54929183efef7326512dd951"
+  },
+  "checks": [
+    "22 modern source identities plus separately preserved former-Sudan736 match official source metadata",
+    "BACI source codes remain authoritative; shared ISO3 does not merge distinct reporting areas",
+    "full-world context includes flows with neither endpoint in the regional scope",
+    "hand-computed import/export concentrations, HHI, top-three and tie rankings",
+    "exact 18-fractional-digit monetary and quantity values and raw scalar retention",
+    "NA and blank quantities remain null; numeric zero remains present zero; coverage denominator retains value",
+    "source-listed legacy9999AA retained with nonstandard-product flag",
+    "transitions distinguish absent records from present zero, enforce adjacent years and common vintage",
+    "unknown products, duplicate keys, inexact decimal values and zero trade values fail closed with private quarantine",
+    "record identifier binds source archive SHA256, original member and one-based parsed record ordinal",
+    "ZIP CRC corruption and mismatched expected archive SHA256 are rejected",
+    "resume verifies exact manifests and all output hashes; corrupt payload/truncated manifest triggers reconstruction",
+    "all product/world totals are independently regrouped; redistribution preserving annual sum is detected",
+    "duplicate market/context/change keys and equal-count wrong transition key sets are rejected",
+    "null numerical fields, scope flags and provenance cannot bypass SQL through unknown comparison truth values",
+    "failed full-validator rerun removes stale passed approval"
+  ],
+  "resolved_issues": [
+    "Resume completeness validation now rejects missing denominator output and truncated/malformed completion manifests",
+    "Invalid-row flag aggregation uses nested UNNEST so intended quarantine error reporting succeeds"
+  ],
+  "limits": [
+    "Small deliberately confounding fixtures do not validate the full production corpus",
+    "Output aggregates are semantically reproducible; byte-identical Parquet rebuilds are not asserted",
+    "Country-scope tests are identity checks, not a fixed-territory or historic legal-membership panel"
+  ],
+  "production_current_year_probe": {
+    "year": 2024,
+    "seconds": 2.566,
+    "memory_limit": "1800MB",
+    "threads": 2,
+    "current_year_arithmetic_references_and_prefix_checks": "passed",
+    "transitions": "not checked during partial probe; full-corpus run must check",
+    "full_validation_report_written": false
+  }
+}

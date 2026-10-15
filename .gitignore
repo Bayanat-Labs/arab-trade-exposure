@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+private/
+.cache/
+data/
+*.zip
+*.part
+*.sqlite*
+.DS_Store

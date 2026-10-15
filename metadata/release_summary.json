@@ -1,0 +1,77 @@
+{
+  "release_version": "0.1.0",
+  "built_at": "2026-10-15T16:06:23.942746+00:00",
+  "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf",
+  "source_version": "202601",
+  "nomenclature": "HS92",
+  "years": [
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "modern_member_count": 22,
+  "historical_context_source_areas": 1,
+  "global_source_rows_processed": 269894500,
+  "tables": {
+    "flows": {
+      "rows": 33517452,
+      "files": 30,
+      "bytes": 1813861109
+    },
+    "exposures": {
+      "rows": 3770939,
+      "files": 30,
+      "bytes": 325528498
+    },
+    "global_context": {
+      "rows": 146967,
+      "files": 30,
+      "bytes": 15837045
+    },
+    "link_observation_changes": {
+      "rows": 21630858,
+      "files": 29,
+      "bytes": 161913763
+    },
+    "countries": {
+      "rows": 238,
+      "files": 1,
+      "bytes": 10909
+    },
+    "products": {
+      "rows": 5022,
+      "files": 1,
+      "bytes": 128981
+    }
+  },
+  "validation_passed": true,
+  "synthetic_records": 0,
+  "primary_row_grain": "directed year/exporter/importer/source-product reconciled flow; not shipment, company or product instance"
+}

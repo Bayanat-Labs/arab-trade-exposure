@@ -1,0 +1,139 @@
+{
+  "title": "Morocco 2024 HS92 310530: destination spread and world export context",
+  "source": {
+    "publisher": "CEPII",
+    "dataset": "BACI",
+    "classification": "HS92",
+    "version": "202601",
+    "archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf",
+    "observation_kind": "reconciled annual bilateral merchandise trade estimates",
+    "value_unit": "thousands of nominal USD; USD columns multiply by exactly 1000",
+    "path_base": "release root",
+    "query_language": "DuckDB SQL",
+    "decimal_serialization": "Exact DECIMAL results are serialized as JSON strings."
+  },
+  "product": {
+    "code": "310530",
+    "official_source_label": "Fertilizers, mineral or chemical: diammonium hydrogenorthophosphate (diammonium phosphate)"
+  },
+  "queries": {
+    "market_and_world_context": "SELECT e.year,e.country_code,e.country_name,e.direction,e.hs6,\n e.total_value_1000usd,e.total_value_usd,e.partner_count,\n e.top1_partner_code,e.top1_share,e.top3_share,e.hhi,\n e.intra_scope_share,e.intra_current_member_share,e.quantity_value_coverage_share,\n g.global_value_1000usd,g.global_value_usd,g.global_supplier_hhi,g.supplier_count,\n cast(e.total_value_1000usd AS DOUBLE)/cast(g.global_value_1000usd AS DOUBLE) AS exporter_share_of_world_product_value,\n e.source_version,e.source_archive_sha256\nFROM read_parquet('data/exposures/year=2024/*.parquet',hive_partitioning=false) e\nJOIN read_parquet('data/global_context/year=2024/*.parquet',hive_partitioning=false) g USING(year,hs6)\nWHERE e.country_code=504 AND e.direction='export' AND e.hs6='310530';",
+    "top5_destination_evidence": "SELECT year,hs6,exporter_code,importer_code,importer_name,\n trade_value_1000usd,trade_value_1000usd*1000 AS trade_value_usd,\n cast(trade_value_1000usd AS DOUBLE)/cast(sum(trade_value_1000usd) OVER() AS DOUBLE) AS share_of_all_recorded_destinations,\n source_member,source_record_ordinal,v_raw,q_raw,source_version,source_archive_sha256\nFROM read_parquet('data/flows/year=2024/*.parquet',hive_partitioning=false)\nWHERE exporter_code=504 AND hs6='310530'\nORDER BY trade_value_1000usd DESC,importer_code LIMIT 5;"
+  },
+  "results": {
+    "market_and_world_context": [
+      {
+        "year": 2024,
+        "country_code": 504,
+        "country_name": "Morocco",
+        "direction": "export",
+        "hs6": "310530",
+        "total_value_1000usd": "2955248.931000000000000000",
+        "total_value_usd": "2955248931.000000000000000000",
+        "partner_count": 71,
+        "top1_partner_code": 699,
+        "top1_share": 0.28514645320076426,
+        "top3_share": 0.5206437707700502,
+        "hhi": 0.1306598235612677,
+        "intra_scope_share": 0.01686261095546269,
+        "intra_current_member_share": 0.01686261095546269,
+        "quantity_value_coverage_share": 1.0,
+        "global_value_1000usd": "10251259.607000000000000000",
+        "global_value_usd": "10251259607.000000000000000000",
+        "global_supplier_hhi": 0.19713743550711335,
+        "supplier_count": 86,
+        "exporter_share_of_world_product_value": 0.28828154239524173,
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      }
+    ],
+    "top5_destination_evidence": [
+      {
+        "year": 2024,
+        "hs6": "310530",
+        "exporter_code": 504,
+        "importer_code": 699,
+        "importer_name": "India",
+        "trade_value_1000usd": "842678.751000000000000000",
+        "trade_value_usd": "842678751.000000000000000000",
+        "share_of_all_recorded_destinations": 0.28514645320076426,
+        "source_member": "BACI_HS92_Y2024_V202601.csv",
+        "source_record_ordinal": 5945812,
+        "v_raw": "842678.751",
+        "q_raw": "1961924.379",
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      },
+      {
+        "year": 2024,
+        "hs6": "310530",
+        "exporter_code": 504,
+        "importer_code": 50,
+        "importer_name": "Bangladesh",
+        "trade_value_1000usd": "577888.815000000000000000",
+        "trade_value_usd": "577888815.000000000000000000",
+        "share_of_all_recorded_destinations": 0.19554657779859289,
+        "source_member": "BACI_HS92_Y2024_V202601.csv",
+        "source_record_ordinal": 5906893,
+        "v_raw": "577888.815",
+        "q_raw": "1098668",
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      },
+      {
+        "year": 2024,
+        "hs6": "310530",
+        "exporter_code": 504,
+        "importer_code": 792,
+        "importer_name": "TÃ¼rkiye",
+        "trade_value_1000usd": "118064.381000000000000000",
+        "trade_value_usd": "118064381.000000000000000000",
+        "share_of_all_recorded_destinations": 0.03995073977069311,
+        "source_member": "BACI_HS92_Y2024_V202601.csv",
+        "source_record_ordinal": 5954681,
+        "v_raw": "118064.381",
+        "q_raw": "265665.335",
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      },
+      {
+        "year": 2024,
+        "hs6": "310530",
+        "exporter_code": 504,
+        "importer_code": 566,
+        "importer_name": "Nigeria",
+        "trade_value_1000usd": "101339.649000000000000000",
+        "trade_value_usd": "101339649.000000000000000000",
+        "share_of_all_recorded_destinations": 0.03429140873276912,
+        "source_member": "BACI_HS92_Y2024_V202601.csv",
+        "source_record_ordinal": 5938410,
+        "v_raw": "101339.649",
+        "q_raw": "277200",
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      },
+      {
+        "year": 2024,
+        "hs6": "310530",
+        "exporter_code": 504,
+        "importer_code": 704,
+        "importer_name": "Viet Nam",
+        "trade_value_1000usd": "93135.579000000000000000",
+        "trade_value_usd": "93135579.000000000000000000",
+        "share_of_all_recorded_destinations": 0.031515307567841565,
+        "source_member": "BACI_HS92_Y2024_V202601.csv",
+        "source_record_ordinal": 5947368,
+        "v_raw": "93135.579",
+        "q_raw": "160386",
+        "source_version": "202601",
+        "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf"
+      }
+    ]
+  },
+  "interpretation_limits": [
+    "The top-five result is a display shortlist; its shares retain all 71 recorded destinations in the denominator.",
+    "World export share is measured against the full worldwide source stream, not only Arab-touch flows.",
+    "This is trade-value distribution, not physical production, supplier capacity, quality or a market-entry recommendation.",
+    "Country names preserve the source labels; code 792 has an upstream encoding artifact in its source name."
+  ]
+}

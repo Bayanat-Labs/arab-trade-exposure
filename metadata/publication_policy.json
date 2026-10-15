@@ -1,0 +1,9 @@
+{
+  "default_language": "en",
+  "documentation_language": "en",
+  "research_and_results_language": "en",
+  "explorer_initial_language": "en",
+  "arabic_interface": "optional_user_toggle",
+  "regional_focus": "Arabic and Arab-region data; this does not imply an Arabic-default interface.",
+  "basis": "User instruction on 2026-10-15."
+}

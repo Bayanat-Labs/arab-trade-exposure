@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite this regional release and the underlying CEPII BACI methodology."
+title: "Bayanat Arab Trade Exposure"
+type: dataset
+version: 0.1.0
+date-released: '2026-10-15'
+authors:
+  - name: Bayanat Labs
+url: https://huggingface.co/datasets/Bayanat-Labs/arab-trade-exposure
+repository-code: https://github.com/Bayanat-Labs/arab-trade-exposure
+license: etalab-2.0
+references:
+  - type: report
+    title: "BACI: International Trade Database at the Product-Level. The 1994–2007 Version"
+    authors:
+      - family-names: Gaulier
+        given-names: Guillaume
+      - family-names: Zignago
+        given-names: Soledad
+    year: 2010
+    institution:
+      name: CEPII
+    url: https://www.cepii.fr/pdf_pub/wp/2010/wp2010-23.pdf

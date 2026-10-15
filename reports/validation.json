@@ -1,0 +1,917 @@
+{
+  "passed": true,
+  "source_archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf",
+  "country_scope_sha256": "727b4aba7432b4dfcbd3536dfaa3c619e78ef76a41e144ff674bb86ee5860209",
+  "ingest_code_sha256": "4f4bd4c7609021be8f36258a592299f1f8982df5b280d57105a434b9bbcbc17b",
+  "validator_code_sha256": "9ddbcad7897c1f90404ca9fa373dc46e9d8e21c061d57fb822e69080c84068cc",
+  "years": [
+    {
+      "year": 1995,
+      "flow_rows": 498341,
+      "exposure_rows": 98999,
+      "global_context_rows": 5017,
+      "link_change_rows": 0,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "272724083.455000000000082000",
+      "exact_global_value_1000usd": "5071331093.306000000012766800",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 1996,
+      "flow_rows": 505739,
+      "exposure_rows": 98462,
+      "global_context_rows": 5017,
+      "link_change_rows": 366440,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "296161044.036000000000000000",
+      "exact_global_value_1000usd": "5367317691.310999999997573400",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 1997,
+      "flow_rows": 544969,
+      "exposure_rows": 99861,
+      "global_context_rows": 5017,
+      "link_change_rows": 421068,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "316544019.918000000000000000",
+      "exact_global_value_1000usd": "5600778992.475999999994736300",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 1998,
+      "flow_rows": 613362,
+      "exposure_rows": 105254,
+      "global_context_rows": 5016,
+      "link_change_rows": 432009,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "297715129.749000000000000000",
+      "exact_global_value_1000usd": "5555739685.298000000003450100",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 1999,
+      "flow_rows": 618913,
+      "exposure_rows": 104841,
+      "global_context_rows": 5017,
+      "link_change_rows": 468183,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "310627759.463000000000000000",
+      "exact_global_value_1000usd": "5757650356.760999999993790200",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2000,
+      "flow_rows": 769546,
+      "exposure_rows": 115031,
+      "global_context_rows": 5017,
+      "link_change_rows": 557601,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "406919297.961999999999999000",
+      "exact_global_value_1000usd": "6518394510.320999999995764720",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2001,
+      "flow_rows": 806296,
+      "exposure_rows": 115942,
+      "global_context_rows": 5015,
+      "link_change_rows": 559790,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "408145898.507999999999989500",
+      "exact_global_value_1000usd": "6325818358.318000000020780930",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2002,
+      "flow_rows": 846877,
+      "exposure_rows": 118634,
+      "global_context_rows": 5011,
+      "link_change_rows": 584345,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "420216570.853999999999988000",
+      "exact_global_value_1000usd": "6630943031.428999999981483570",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2003,
+      "flow_rows": 883369,
+      "exposure_rows": 121628,
+      "global_context_rows": 5007,
+      "link_change_rows": 630970,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "507106692.282999999999999010",
+      "exact_global_value_1000usd": "7665256854.129000000009887180",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2004,
+      "flow_rows": 932111,
+      "exposure_rows": 125466,
+      "global_context_rows": 5007,
+      "link_change_rows": 660854,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "650236299.024000000000000000",
+      "exact_global_value_1000usd": "9248409810.689000000014992090",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2005,
+      "flow_rows": 1066106,
+      "exposure_rows": 130453,
+      "global_context_rows": 5008,
+      "link_change_rows": 744779,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "819609853.277000000000000000",
+      "exact_global_value_1000usd": "10499333564.328999999995788170",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2006,
+      "flow_rows": 1103474,
+      "exposure_rows": 132360,
+      "global_context_rows": 5006,
+      "link_change_rows": 793454,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1013184042.866000000000011000",
+      "exact_global_value_1000usd": "12087679114.209000000017965130",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2007,
+      "flow_rows": 1214968,
+      "exposure_rows": 137048,
+      "global_context_rows": 5006,
+      "link_change_rows": 837972,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1192024483.024999999999999970",
+      "exact_global_value_1000usd": "13965754807.151000000091620250",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2008,
+      "flow_rows": 1259894,
+      "exposure_rows": 136003,
+      "global_context_rows": 4950,
+      "link_change_rows": 831598,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1652190311.317000000000010000",
+      "exact_global_value_1000usd": "16132026222.673000000020377150",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2009,
+      "flow_rows": 1148377,
+      "exposure_rows": 132573,
+      "global_context_rows": 4939,
+      "link_change_rows": 867333,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1159248173.503999999999999870",
+      "exact_global_value_1000usd": "12449367332.998999999981739140",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2010,
+      "flow_rows": 1244973,
+      "exposure_rows": 133330,
+      "global_context_rows": 4938,
+      "link_change_rows": 825150,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1456996181.819000000000000000",
+      "exact_global_value_1000usd": "15032172848.533999999994523483",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2011,
+      "flow_rows": 1180772,
+      "exposure_rows": 131080,
+      "global_context_rows": 4910,
+      "link_change_rows": 821667,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1822069063.745999999999999900",
+      "exact_global_value_1000usd": "17923315413.826000000032446400",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2012,
+      "flow_rows": 1288535,
+      "exposure_rows": 133056,
+      "global_context_rows": 4902,
+      "link_change_rows": 910167,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2092549319.770000000000000000",
+      "exact_global_value_1000usd": "18018888803.163999999984803200",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2013,
+      "flow_rows": 1330368,
+      "exposure_rows": 133513,
+      "global_context_rows": 4906,
+      "link_change_rows": 834679,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2046877968.336000000000000000",
+      "exact_global_value_1000usd": "18207568026.153999999886970403",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2014,
+      "flow_rows": 1391484,
+      "exposure_rows": 134580,
+      "global_context_rows": 4905,
+      "link_change_rows": 832798,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2004338544.429000000000000000",
+      "exact_global_value_1000usd": "18350477732.722000000005012936",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2015,
+      "flow_rows": 1384907,
+      "exposure_rows": 135243,
+      "global_context_rows": 4865,
+      "link_change_rows": 861909,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1519517367.545999999999998000",
+      "exact_global_value_1000usd": "16050404527.566999999994336393",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2016,
+      "flow_rows": 1378958,
+      "exposure_rows": 131323,
+      "global_context_rows": 4869,
+      "link_change_rows": 834379,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1389101865.201000000000000000",
+      "exact_global_value_1000usd": "15687223850.143999999998121390",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2017,
+      "flow_rows": 1447658,
+      "exposure_rows": 133251,
+      "global_context_rows": 4829,
+      "link_change_rows": 866174,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1599448182.642999999999999970",
+      "exact_global_value_1000usd": "17623778912.442999999984274260",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2018,
+      "flow_rows": 1455048,
+      "exposure_rows": 134809,
+      "global_context_rows": 4807,
+      "link_change_rows": 886946,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1807575325.626999999999969900",
+      "exact_global_value_1000usd": "19114519013.485000000002509660",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2019,
+      "flow_rows": 1467503,
+      "exposure_rows": 134069,
+      "global_context_rows": 4763,
+      "link_change_rows": 848819,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1754853178.682000000000089780",
+      "exact_global_value_1000usd": "18565427886.910000000014628170",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2020,
+      "flow_rows": 1393989,
+      "exposure_rows": 132139,
+      "global_context_rows": 4642,
+      "link_change_rows": 837740,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1422634585.883000000000000000",
+      "exact_global_value_1000usd": "17175924852.334000000004262100",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2021,
+      "flow_rows": 1491013,
+      "exposure_rows": 136408,
+      "global_context_rows": 4643,
+      "link_change_rows": 854616,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "1903314319.463000000000000000",
+      "exact_global_value_1000usd": "21436236860.778999999978843980",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2022,
+      "flow_rows": 1493782,
+      "exposure_rows": 135745,
+      "global_context_rows": 4652,
+      "link_change_rows": 876521,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2490967332.854000000000000000",
+      "exact_global_value_1000usd": "24145991347.413999999908731910",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2023,
+      "flow_rows": 1508445,
+      "exposure_rows": 135404,
+      "global_context_rows": 4649,
+      "link_change_rows": 859557,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2347031516.807000000000000000",
+      "exact_global_value_1000usd": "22958882317.274000000008870610",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    },
+    {
+      "year": 2024,
+      "flow_rows": 1247675,
+      "exposure_rows": 124434,
+      "global_context_rows": 4637,
+      "link_change_rows": 923340,
+      "csv_prefix_round_trips": 5,
+      "python_market_recomputations": 10,
+      "exact_regional_value_1000usd": "2144233071.805000000000000000",
+      "exact_global_value_1000usd": "22833026180.540999999973060040",
+      "all_market_concentrations_recomputed": true,
+      "all_global_product_distributions_recomputed": true,
+      "passed": true
+    }
+  ],
+  "global_source_rows_processed": 269894500,
+  "released_flow_rows": 33517452,
+  "exposure_rows": 3770939,
+  "global_context_rows": 146967,
+  "link_change_rows": 21630858,
+  "csv_source_round_trip_count": 150,
+  "python_market_recomputation_count": 300,
+  "sample_design": "First five released source positions and first ten sorted markets per annual member. Technical prefix checks; not a random expert validation sample. All market and global product concentrations are additionally regrouped from exact input values in SQL.",
+  "arithmetic_tolerance_hhi": 1e-12,
+  "checked_data_files": [
+    {
+      "path": "data/flows/year=1995/part-00000.parquet",
+      "sha256": "e19e19c0ba715fd57ea11fcfaac0590276f6671b6a523bed7ac20043c611e5ec"
+    },
+    {
+      "path": "data/exposures/year=1995/part-00000.parquet",
+      "sha256": "0308a7f9bfd52723c9f77e3770d0addf16a39495280ed19629af68f73af8427c"
+    },
+    {
+      "path": "data/global_context/year=1995/part-00000.parquet",
+      "sha256": "8ecf5aaaf6faabed987d36dee287da452d89dcd4010df8d75cc4738722a9082e"
+    },
+    {
+      "path": "data/flows/year=1996/part-00000.parquet",
+      "sha256": "751d371e97cbb9dec432d1fb70f182a2a492a290b464a4beb4a27c7c2579235d"
+    },
+    {
+      "path": "data/exposures/year=1996/part-00000.parquet",
+      "sha256": "401815a854ca0254b475195c9bca83aea9307e6b8faa66d8716bddca3af6c23c"
+    },
+    {
+      "path": "data/global_context/year=1996/part-00000.parquet",
+      "sha256": "b19ee184c4e6d4a5dde15ae5106ff5bbbb3cd7748c92750ec4d6a6b6ab4471c5"
+    },
+    {
+      "path": "data/link_observation_changes/year=1996/part-00000.parquet",
+      "sha256": "4b7141cf6bb2b246924a780bb822da7209ada827f0c8088e78daa056b033cf34"
+    },
+    {
+      "path": "data/flows/year=1997/part-00000.parquet",
+      "sha256": "bab71c3a3e53e1d42b96f9a4cc4d91c8008b680a5ea797dd93c29270afb491a9"
+    },
+    {
+      "path": "data/exposures/year=1997/part-00000.parquet",
+      "sha256": "dbd3a5021d5181a7593d7965e99738d5679792210c155706d1c865d6973ac303"
+    },
+    {
+      "path": "data/global_context/year=1997/part-00000.parquet",
+      "sha256": "894aa7055c42bccf08b4f45b77cd2a8583cf91a70c744e1fcc2eb9af21b53aee"
+    },
+    {
+      "path": "data/link_observation_changes/year=1997/part-00000.parquet",
+      "sha256": "fc00c453f1044149901e8284ac8a5da30107560fc0c3a60c4838fb719e08f75e"
+    },
+    {
+      "path": "data/flows/year=1998/part-00000.parquet",
+      "sha256": "89b1b99794176316040609b6f0650f6e8fee28d27b80fee0b94a496fd4d85edc"
+    },
+    {
+      "path": "data/exposures/year=1998/part-00000.parquet",
+      "sha256": "9cf9dae5964c2b7afc2b4b53da9727829a585477c4aed46b20e2fbf19975ca4b"
+    },
+    {
+      "path": "data/global_context/year=1998/part-00000.parquet",
+      "sha256": "a8c5ca8f0618962e158e619c9f0af68321074ca3cde2ad341143304f4b78352e"
+    },
+    {
+      "path": "data/link_observation_changes/year=1998/part-00000.parquet",
+      "sha256": "da248272b7686213c915ef5cc55dffdf16759460a92999de836fe8107ab3cdc5"
+    },
+    {
+      "path": "data/flows/year=1999/part-00000.parquet",
+      "sha256": "6e5c44d9ab5948e16b153ed42c3b766f5f7adf133e4fb282559b16d7512ad633"
+    },
+    {
+      "path": "data/exposures/year=1999/part-00000.parquet",
+      "sha256": "ae0a4301533431fa6ee9d06cc41a5951e0ef7ed2e02b293d44b42ad718779df9"
+    },
+    {
+      "path": "data/global_context/year=1999/part-00000.parquet",
+      "sha256": "f8736b3753984d3dc4af7f15fc2a82866ebcfbc1b8f592ceb824ed185cd4cefc"
+    },
+    {
+      "path": "data/link_observation_changes/year=1999/part-00000.parquet",
+      "sha256": "dff257d4177291b8377f545e2d90d62a8ad1077d0bd14b1fcd93361c908f7908"
+    },
+    {
+      "path": "data/flows/year=2000/part-00000.parquet",
+      "sha256": "7531e9bd7fed859cf2d83d259880bce6e1121f1c4417e9b9a55b171b2d2bbc97"
+    },
+    {
+      "path": "data/exposures/year=2000/part-00000.parquet",
+      "sha256": "ff13cabf2c34630d2d2d80dccd487c0a3c55ee50fac7a8bd101c038c72b17af5"
+    },
+    {
+      "path": "data/global_context/year=2000/part-00000.parquet",
+      "sha256": "9c62503aea5a6e566ebc994d9d6d5254215367cc64954b3dc2ddab045082161e"
+    },
+    {
+      "path": "data/link_observation_changes/year=2000/part-00000.parquet",
+      "sha256": "7bef5837712aedd405d8ab7e167b429eeff9b3eac5a3651c831e0faa1323b8c6"
+    },
+    {
+      "path": "data/flows/year=2001/part-00000.parquet",
+      "sha256": "ccd864737fecc08415b29f6e05ba0715642b1f57b3171200f49da59018be1a3a"
+    },
+    {
+      "path": "data/exposures/year=2001/part-00000.parquet",
+      "sha256": "4de66ea0baab47748fbcb2d4e9591eac7091dbeb6855a3eab252ea1fe0de5d43"
+    },
+    {
+      "path": "data/global_context/year=2001/part-00000.parquet",
+      "sha256": "8e56c3e5da2f5c9bfef132b070109f186f9d2a6f2eb92256c1015d01ca7ec91b"
+    },
+    {
+      "path": "data/link_observation_changes/year=2001/part-00000.parquet",
+      "sha256": "3c77406309d7646b2b393cf9425f4fada0879150e8da47b6c540dc1f69430a53"
+    },
+    {
+      "path": "data/flows/year=2002/part-00000.parquet",
+      "sha256": "0ba0bba3f48cf4f2f00fac9b68512240c64a5f14714f6eb73571f7db9967a379"
+    },
+    {
+      "path": "data/exposures/year=2002/part-00000.parquet",
+      "sha256": "1ddbaa53cb10f8ab4514c9899b580ab952df6864ae5407c072e8d46a96698d07"
+    },
+    {
+      "path": "data/global_context/year=2002/part-00000.parquet",
+      "sha256": "d72f9a95ed63605e1bf9a1cb1d0ac57e1266437eb70be3c255eaa349ac079cc1"
+    },
+    {
+      "path": "data/link_observation_changes/year=2002/part-00000.parquet",
+      "sha256": "dd34b118923dff8836de028cee365f60994b8a856efab3ace5bea93a5daec603"
+    },
+    {
+      "path": "data/flows/year=2003/part-00000.parquet",
+      "sha256": "9281035f85f1aa99f6a9f51320324d79873ca0214443116ac7fcda3f8d4f9f85"
+    },
+    {
+      "path": "data/exposures/year=2003/part-00000.parquet",
+      "sha256": "bc11564286582585a1c355c37e9e192fc99d89ad65de565634259c12a17d883c"
+    },
+    {
+      "path": "data/global_context/year=2003/part-00000.parquet",
+      "sha256": "11f24e3dd2deaf52cff8cb658d7c2a1b46838b3aba4404d752eb26cf54bfcff8"
+    },
+    {
+      "path": "data/link_observation_changes/year=2003/part-00000.parquet",
+      "sha256": "67b4727b53de42d56a64c34eee8eeabc1b5d44e191efe79d6d6973011da0eba1"
+    },
+    {
+      "path": "data/flows/year=2004/part-00000.parquet",
+      "sha256": "24334303da865f52b40d5af04ae1654e19191c889880ac0a7df12b5961a603b3"
+    },
+    {
+      "path": "data/exposures/year=2004/part-00000.parquet",
+      "sha256": "989f0a7a904970913be21553be515c708bcd3c78c409c9ad473b045af81685ce"
+    },
+    {
+      "path": "data/global_context/year=2004/part-00000.parquet",
+      "sha256": "766eaa2baee0b6c14b81bc02be8cdffbd841191b41cb608c942eae08b0266ed6"
+    },
+    {
+      "path": "data/link_observation_changes/year=2004/part-00000.parquet",
+      "sha256": "a9982ae480c0dac874fb25fbd896062f4ddc1dbd39816fd3c795630d50191581"
+    },
+    {
+      "path": "data/flows/year=2005/part-00000.parquet",
+      "sha256": "7d5904382eac203df1ebc5e93060de319568ca85efced9fcf59b025b644531b9"
+    },
+    {
+      "path": "data/exposures/year=2005/part-00000.parquet",
+      "sha256": "8ea32e64641bd2e64d1a27163357c4d5de775aaf3e2d64324f38c9723dd53f34"
+    },
+    {
+      "path": "data/global_context/year=2005/part-00000.parquet",
+      "sha256": "b3a6a1a6d848f3910cdcc1590fd5e15263ed47e0ac39e14c33382441e535ded1"
+    },
+    {
+      "path": "data/link_observation_changes/year=2005/part-00000.parquet",
+      "sha256": "29de9750ff5f59246a43d72dd4216ef04ce43100aa9f84c08c0bb29c89bc0cd4"
+    },
+    {
+      "path": "data/flows/year=2006/part-00000.parquet",
+      "sha256": "a207acc2fac2ae3515622a22c128e038fa66c6792bc206abfcaad5cf5ba8308b"
+    },
+    {
+      "path": "data/exposures/year=2006/part-00000.parquet",
+      "sha256": "7957932be02c52ca5b4398c0a5f09de6b3b6c8e44b2b0437f292df7265019d01"
+    },
+    {
+      "path": "data/global_context/year=2006/part-00000.parquet",
+      "sha256": "9535c6ac05daaa18587edb93d7ed48d4795148931125a13ea49af78e6b6798a2"
+    },
+    {
+      "path": "data/link_observation_changes/year=2006/part-00000.parquet",
+      "sha256": "3ad2308b1797815726ad0ead98be66d9b01eeb9441415248914b78e7ab69e8fe"
+    },
+    {
+      "path": "data/flows/year=2007/part-00000.parquet",
+      "sha256": "ab6b1ff90a76137866f9a509dadb91a384619bac75b4ac95b7dfee87221e3312"
+    },
+    {
+      "path": "data/exposures/year=2007/part-00000.parquet",
+      "sha256": "ebf357c18977e22f6db9fd171ab587fc7ca4e317a9dca9c47864390fb87b59b5"
+    },
+    {
+      "path": "data/global_context/year=2007/part-00000.parquet",
+      "sha256": "f6faaac47b65e1530ad4653dbc02288d5265ead739e124fdd1d9f2e9be445dd5"
+    },
+    {
+      "path": "data/link_observation_changes/year=2007/part-00000.parquet",
+      "sha256": "670a630b29f67b186370483d738644fa9ac84e03d7d7c1359e0fec60e6aa0bc0"
+    },
+    {
+      "path": "data/flows/year=2008/part-00000.parquet",
+      "sha256": "130cbbee572f63a878d5dd339a2ddb6b7759a97b4924b1c86aca12a31fdc7b71"
+    },
+    {
+      "path": "data/exposures/year=2008/part-00000.parquet",
+      "sha256": "2003ebdc919177c77310d2692062b1cd67e012b061754505088902740feaf5e2"
+    },
+    {
+      "path": "data/global_context/year=2008/part-00000.parquet",
+      "sha256": "0d53416f1c8da8a5a3e0dca01857b2d93913d09966497bf049ebab1be93fd9b6"
+    },
+    {
+      "path": "data/link_observation_changes/year=2008/part-00000.parquet",
+      "sha256": "29af8ca19c91cf9a819965a0dfd9cd85a7f20e74081df65b320d2c80869d11a4"
+    },
+    {
+      "path": "data/flows/year=2009/part-00000.parquet",
+      "sha256": "3157fd91d8c6e5c82fc5202a389fa9d59a41cf363a38a88249e209371d70913a"
+    },
+    {
+      "path": "data/exposures/year=2009/part-00000.parquet",
+      "sha256": "03b8eb4d1e431fd7749c467623b9a19c62975c912170caa705af9d3c87273407"
+    },
+    {
+      "path": "data/global_context/year=2009/part-00000.parquet",
+      "sha256": "09fe8b5e7ce550021e05970d4e4cbfab3dff81f1f24ebe9b2465d809d83d1998"
+    },
+    {
+      "path": "data/link_observation_changes/year=2009/part-00000.parquet",
+      "sha256": "cff45aac130934dd5fd651f2bc9b0749ff96aa0166bfc99fdaa4c11adb59ea75"
+    },
+    {
+      "path": "data/flows/year=2010/part-00000.parquet",
+      "sha256": "dbac15aa716eaf055ebfd790fc74e0cc62c94435d8f232fd22d673e9979029cd"
+    },
+    {
+      "path": "data/exposures/year=2010/part-00000.parquet",
+      "sha256": "a575ddb660f4187099042a9dc559927841464853b7c58cdf9487b320d96db130"
+    },
+    {
+      "path": "data/global_context/year=2010/part-00000.parquet",
+      "sha256": "010de65c45e79520683248e91fd7183d571d708bdc2643257badf295e3d3cc67"
+    },
+    {
+      "path": "data/link_observation_changes/year=2010/part-00000.parquet",
+      "sha256": "9f3c1553ed46355f20464081d9813546630e17f7f113fda4f2314a809dd5946c"
+    },
+    {
+      "path": "data/flows/year=2011/part-00000.parquet",
+      "sha256": "9d6369c470d10a58181ac1441d7daa2b19a9bc7e6ce234cfa87be13251219227"
+    },
+    {
+      "path": "data/exposures/year=2011/part-00000.parquet",
+      "sha256": "1a19c0990850a36c6a06b1f8b916f868b21b1d623d230aa17804cce2278acaa1"
+    },
+    {
+      "path": "data/global_context/year=2011/part-00000.parquet",
+      "sha256": "c1615f5937a09cf07502e01729ee02ace2b5f7fc168d28f1686e1ab1c3b47d8c"
+    },
+    {
+      "path": "data/link_observation_changes/year=2011/part-00000.parquet",
+      "sha256": "a7b889d614e8d4d4828eebd89959e137fa7ee915e3245a638b32709262a20a87"
+    },
+    {
+      "path": "data/flows/year=2012/part-00000.parquet",
+      "sha256": "3474e201ceaa0097b8902dd7193d0f9f5e19248e101f02cda8d5d7bca97f6fc1"
+    },
+    {
+      "path": "data/exposures/year=2012/part-00000.parquet",
+      "sha256": "c7f4180180861ac896dd12e20c0ec200f7ad06aba390ae2f3a2b5b1a3835bf19"
+    },
+    {
+      "path": "data/global_context/year=2012/part-00000.parquet",
+      "sha256": "da4c7a5a9a569e45f11b43bf5b41a53ad74afb7ec1c7fd76dd1e087fa2abd743"
+    },
+    {
+      "path": "data/link_observation_changes/year=2012/part-00000.parquet",
+      "sha256": "264e4de5fb554819be2bdaecaee1f57c0fc599bf358c7b7457c816b44f616171"
+    },
+    {
+      "path": "data/flows/year=2013/part-00000.parquet",
+      "sha256": "46668c03528e8862dda2300b5e18b79da8ab138d9468ffb5167674917f0e47d8"
+    },
+    {
+      "path": "data/exposures/year=2013/part-00000.parquet",
+      "sha256": "22b0e87dd1f0a98256022bebf6a47a60a9f7aa4e5ec12ff7f0eaada7c7bc665f"
+    },
+    {
+      "path": "data/global_context/year=2013/part-00000.parquet",
+      "sha256": "96e44061b608622e734b2b0388e46b8bcebba9a581d1faac8ac22f4b65e2fa70"
+    },
+    {
+      "path": "data/link_observation_changes/year=2013/part-00000.parquet",
+      "sha256": "76e95332bd6cb9784246d97927f5344033c8737c87c83a506300dd127ffa5120"
+    },
+    {
+      "path": "data/flows/year=2014/part-00000.parquet",
+      "sha256": "0c5dcf3de56c7bcb44c8d206bf06043f9fa3c8eb9fce4d996a860475a990566c"
+    },
+    {
+      "path": "data/exposures/year=2014/part-00000.parquet",
+      "sha256": "4b37718193456b39af20edfb4fec5502b1e988a9f4eaae20e0801be91d08486e"
+    },
+    {
+      "path": "data/global_context/year=2014/part-00000.parquet",
+      "sha256": "0578c8eb245bdd3bf0a2e218f0817271690fa685b45524665a4c753ed308029f"
+    },
+    {
+      "path": "data/link_observation_changes/year=2014/part-00000.parquet",
+      "sha256": "aa53b55cffa24aaca8e04c2ee30d54256a46821e1c36912195a447fb45a2332b"
+    },
+    {
+      "path": "data/flows/year=2015/part-00000.parquet",
+      "sha256": "030df290523675cd0773844b334d89a1e7c70a6ec6e49b97b2bf312c5710b7f9"
+    },
+    {
+      "path": "data/exposures/year=2015/part-00000.parquet",
+      "sha256": "d701c7a01cbad4ee1a0d8abdec49c575b195467c7cbc33db7ccc76d3e5238873"
+    },
+    {
+      "path": "data/global_context/year=2015/part-00000.parquet",
+      "sha256": "e96e09eb324473ec4d8633046e06c2417fb672ecbe976325b9c13ac6eb52f909"
+    },
+    {
+      "path": "data/link_observation_changes/year=2015/part-00000.parquet",
+      "sha256": "e5bae5676f1770ccf6fcc6b80b1211a6e3ccd0ed5cb69c10a5b4bdb0c5673661"
+    },
+    {
+      "path": "data/flows/year=2016/part-00000.parquet",
+      "sha256": "b4eb625d4e07af866e5c430d89f40173a6b4a3b91dc8fed98280ce93a0a132d9"
+    },
+    {
+      "path": "data/exposures/year=2016/part-00000.parquet",
+      "sha256": "1a416a504cc4ae685a085ac9d54c9a57fb9861ac162144d0fa1538959b069a72"
+    },
+    {
+      "path": "data/global_context/year=2016/part-00000.parquet",
+      "sha256": "088efc8e4ac775ea3415de5109ab21123e1e4f62c96560dc9d3db0e29663a5d9"
+    },
+    {
+      "path": "data/link_observation_changes/year=2016/part-00000.parquet",
+      "sha256": "7ea9a62fc6d84a52d50c0ab2a4b76094f35913578f0892c1e5b8cd76919eda24"
+    },
+    {
+      "path": "data/flows/year=2017/part-00000.parquet",
+      "sha256": "68ff2a162db2567dda7100a687390d1fcd39336ea54cd9baff0db2003a4e44b6"
+    },
+    {
+      "path": "data/exposures/year=2017/part-00000.parquet",
+      "sha256": "1ba161930bf42c651a96fb863c494b37fb36f45b6424c07aafd1c77ff9224ba1"
+    },
+    {
+      "path": "data/global_context/year=2017/part-00000.parquet",
+      "sha256": "d82c53717416cfd95835149300ddb68f02ca52183a148d96f5ee834063a38ebf"
+    },
+    {
+      "path": "data/link_observation_changes/year=2017/part-00000.parquet",
+      "sha256": "12a2391c0b23d04041b911e550b051f7732e88c155de58ce0328cade97bf8da5"
+    },
+    {
+      "path": "data/flows/year=2018/part-00000.parquet",
+      "sha256": "f1bac610cfc151c9cbe5b101ddd264c54e7fa61c99ae3eb8b0221a9d0f3683a1"
+    },
+    {
+      "path": "data/exposures/year=2018/part-00000.parquet",
+      "sha256": "277517e95a07a5e0169b478e2abe8bb16d4ed3f9b1c4f54ff1407bc7c94acefe"
+    },
+    {
+      "path": "data/global_context/year=2018/part-00000.parquet",
+      "sha256": "5e1a130144278afcaee0afdaf458edef3c4ec893206113fb3abbac0eb5842b82"
+    },
+    {
+      "path": "data/link_observation_changes/year=2018/part-00000.parquet",
+      "sha256": "a873eef4c1bc499d53d37635b625f6387b7ae25fd0deb254b5c9f476ea30c140"
+    },
+    {
+      "path": "data/flows/year=2019/part-00000.parquet",
+      "sha256": "244ae3a6e832ed76ede5e80cb243d1c56c0842c201586bd5877bc9d33b0d033d"
+    },
+    {
+      "path": "data/exposures/year=2019/part-00000.parquet",
+      "sha256": "2115266f2ebf0fab34cda311e4073b8cc72789e629cec9de806854e2805bf0e5"
+    },
+    {
+      "path": "data/global_context/year=2019/part-00000.parquet",
+      "sha256": "a4aaf2aa4b56fa4e26900bdc822fcd21aaf0c3aae4bdc0edff113abed9f47ceb"
+    },
+    {
+      "path": "data/link_observation_changes/year=2019/part-00000.parquet",
+      "sha256": "d146d96650312e5899b2221ab0bf5319bceb8fdcae8578bda40b839546de1fd0"
+    },
+    {
+      "path": "data/flows/year=2020/part-00000.parquet",
+      "sha256": "191f6598147dbfa9299e1d17efb705d1bbd0774432ba11ca0ca2ad1ae75fdf37"
+    },
+    {
+      "path": "data/exposures/year=2020/part-00000.parquet",
+      "sha256": "c021b1bf74dc6cef988242a22ad66818b2f4f2eac6d7df9ffeb9d47071aa8393"
+    },
+    {
+      "path": "data/global_context/year=2020/part-00000.parquet",
+      "sha256": "a493581eb623857026ffa131e38eeb7522de52fe5086a0c532909835cf8f4960"
+    },
+    {
+      "path": "data/link_observation_changes/year=2020/part-00000.parquet",
+      "sha256": "0e4a907f39af7712ada2bd7be7e112f20a2dce909d68ee65a0d02fa5f2e09924"
+    },
+    {
+      "path": "data/flows/year=2021/part-00000.parquet",
+      "sha256": "b0e0be0d6f11fa5fbe0401dc6ddf8da80c9939cb9380614e72051c84ff10b423"
+    },
+    {
+      "path": "data/exposures/year=2021/part-00000.parquet",
+      "sha256": "d2ab50264b9d5830fca994c825928c1b1874db913bb13978d45b49a3d4975418"
+    },
+    {
+      "path": "data/global_context/year=2021/part-00000.parquet",
+      "sha256": "99e8df30718c3c0998f2d3379f87260f0407a0eb170d688f1401a279fbd8799b"
+    },
+    {
+      "path": "data/link_observation_changes/year=2021/part-00000.parquet",
+      "sha256": "5c8cf6a5c7a7d3c60103042bc8ab4f541362a94aeee79b4b405df6c57e940213"
+    },
+    {
+      "path": "data/flows/year=2022/part-00000.parquet",
+      "sha256": "eb1831396a1107cf5d089cdf01f97745b33ce270e3973526cfd8d9aa2adc4ef6"
+    },
+    {
+      "path": "data/exposures/year=2022/part-00000.parquet",
+      "sha256": "73dcf96577c5d4a9f6afc635c47b36e53e258bfde202a3498c6be0ffbfb69fb1"
+    },
+    {
+      "path": "data/global_context/year=2022/part-00000.parquet",
+      "sha256": "470814c6bb691d90de585185b6d5984ec5a6051026c305f3593964c8a2a97643"
+    },
+    {
+      "path": "data/link_observation_changes/year=2022/part-00000.parquet",
+      "sha256": "de8fcc88d43ecc3667b063298ca658332b7635ecedd1003b62b11b0a05e0f79c"
+    },
+    {
+      "path": "data/flows/year=2023/part-00000.parquet",
+      "sha256": "ba528241ce05aa7bfaf28467200a882c2b2f2b48384bf8178a07373d6f26758c"
+    },
+    {
+      "path": "data/exposures/year=2023/part-00000.parquet",
+      "sha256": "48bd650a5d5d72e932671373b052a758fe3273ccc8af71d36c997199357b54c0"
+    },
+    {
+      "path": "data/global_context/year=2023/part-00000.parquet",
+      "sha256": "38f22df85f2b601c8336f927bab92419d0952f2b6cca7e825f1febf8d63bd088"
+    },
+    {
+      "path": "data/link_observation_changes/year=2023/part-00000.parquet",
+      "sha256": "a75487441c247960c4af2de17960031572ad7e80cf2f0b8e925762dc684666fc"
+    },
+    {
+      "path": "data/flows/year=2024/part-00000.parquet",
+      "sha256": "d225f8078349aa87eef8c23009240a3ebd8ae8b4ec1a0b61a5049f1feabbb2e3"
+    },
+    {
+      "path": "data/exposures/year=2024/part-00000.parquet",
+      "sha256": "0b39e312a63ee526805f683f812c9ff598551f994c28db4a4543da8c4a61f7f2"
+    },
+    {
+      "path": "data/global_context/year=2024/part-00000.parquet",
+      "sha256": "0555107f3b0b6957ff3a3308b153551b31af000f453ace51b6ca7dc29f1b0f89"
+    },
+    {
+      "path": "data/link_observation_changes/year=2024/part-00000.parquet",
+      "sha256": "c79f36ea2d69e0df9f00070650a7473f34b0f5ef04419de37502c00ab615c3d0"
+    }
+  ],
+  "limitations": "Software/integrity audit only. Underlying source reporting accuracy, economic causality, supplier replaceability and market forecasts are not validated."
+}

@@ -1,0 +1,181 @@
+{
+  "title": "Scope audit: observed 2024 member areas and separate historical Sudan source identity",
+  "source": {
+    "publisher": "CEPII",
+    "dataset": "BACI",
+    "classification": "HS92",
+    "version": "202601",
+    "archive_sha256": "43259580059fa83e17fcdb6866e7b7f39aaf0dd50277cfe494a1ed05a4844faf",
+    "observation_kind": "reconciled annual bilateral merchandise trade estimates",
+    "value_unit": "thousands of nominal USD; USD columns multiply by exactly 1000",
+    "path_base": "release root",
+    "query_language": "DuckDB SQL",
+    "decimal_serialization": "Exact DECIMAL results are serialized as JSON strings."
+  },
+  "product": null,
+  "queries": {
+    "observed_2024_scope": "WITH endpoint_areas AS (\n SELECT exporter_code AS country_code,exporter_scope_status AS scope_status,\n   exporter_current_member AS current_member\n FROM read_parquet('data/flows/year=2024/*.parquet',hive_partitioning=false)\n WHERE exporter_in_scope\n UNION ALL\n SELECT importer_code,importer_scope_status,importer_current_member\n FROM read_parquet('data/flows/year=2024/*.parquet',hive_partitioning=false)\n WHERE importer_in_scope\n)\nSELECT count(DISTINCT country_code) AS observed_in_scope_source_areas,\n count(DISTINCT country_code) FILTER(WHERE current_member) AS observed_modern_member_areas,\n count(DISTINCT country_code) FILTER(WHERE scope_status='historical_predecessor') AS observed_historical_predecessor_areas\nFROM endpoint_areas;",
+    "sudan_source_area_history": "WITH requested AS (\n SELECT y.year,c.country_code,d.direction\n FROM (VALUES (2010),(2012),(2024)) y(year)\n CROSS JOIN (VALUES (729),(736)) c(country_code)\n CROSS JOIN (VALUES ('import'),('export')) d(direction)\n), observed AS (\n SELECT year,country_code,direction,min(country_name) AS source_country_name,\n   min(country_scope_status) AS scope_status,min(country_iso3) AS source_iso3,\n   count(*) AS observed_product_markets,sum(observed_partner_count) AS observed_bilateral_rows,\n   sum(total_value_1000usd) AS recorded_value_1000usd\n FROM read_parquet('data/exposures/year=*/*.parquet',hive_partitioning=false)\n WHERE year IN(2010,2012,2024) AND country_code IN(729,736)\n GROUP BY year,country_code,direction\n)\nSELECT r.year,r.country_code,r.direction,o.source_country_name,o.scope_status,o.source_iso3,\n o.observed_product_markets IS NOT NULL AS observed_area_direction,\n coalesce(o.observed_product_markets,0) AS observed_product_market_rows,\n coalesce(o.observed_bilateral_rows,0) AS observed_bilateral_row_count,\n o.recorded_value_1000usd\nFROM requested r LEFT JOIN observed o USING(year,country_code,direction)\nORDER BY r.year,r.country_code,r.direction;"
+  },
+  "results": {
+    "observed_2024_scope": [
+      {
+        "observed_in_scope_source_areas": 22,
+        "observed_modern_member_areas": 22,
+        "observed_historical_predecessor_areas": 0
+      }
+    ],
+    "sudan_source_area_history": [
+      {
+        "year": 2010,
+        "country_code": 729,
+        "direction": "export",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      },
+      {
+        "year": 2010,
+        "country_code": 729,
+        "direction": "import",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      },
+      {
+        "year": 2010,
+        "country_code": 736,
+        "direction": "export",
+        "source_country_name": "Sudan (...2011)",
+        "scope_status": "historical_predecessor",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 1154,
+        "observed_bilateral_row_count": 2696,
+        "recorded_value_1000usd": "11300521.142000000000000000"
+      },
+      {
+        "year": 2010,
+        "country_code": 736,
+        "direction": "import",
+        "source_country_name": "Sudan (...2011)",
+        "scope_status": "historical_predecessor",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 4024,
+        "observed_bilateral_row_count": 37921,
+        "recorded_value_1000usd": "14196976.601000000000000000"
+      },
+      {
+        "year": 2012,
+        "country_code": 729,
+        "direction": "export",
+        "source_country_name": "Sudan",
+        "scope_status": "current_member",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 1231,
+        "observed_bilateral_row_count": 2785,
+        "recorded_value_1000usd": "6673198.220000000000000000"
+      },
+      {
+        "year": 2012,
+        "country_code": 729,
+        "direction": "import",
+        "source_country_name": "Sudan",
+        "scope_status": "current_member",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 3934,
+        "observed_bilateral_row_count": 34446,
+        "recorded_value_1000usd": "9697063.505000000000000000"
+      },
+      {
+        "year": 2012,
+        "country_code": 736,
+        "direction": "export",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      },
+      {
+        "year": 2012,
+        "country_code": 736,
+        "direction": "import",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      },
+      {
+        "year": 2024,
+        "country_code": 729,
+        "direction": "export",
+        "source_country_name": "Sudan",
+        "scope_status": "current_member",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 549,
+        "observed_bilateral_row_count": 982,
+        "recorded_value_1000usd": "3101723.135000000000000000"
+      },
+      {
+        "year": 2024,
+        "country_code": 729,
+        "direction": "import",
+        "source_country_name": "Sudan",
+        "scope_status": "current_member",
+        "source_iso3": "SDN",
+        "observed_area_direction": true,
+        "observed_product_market_rows": 2730,
+        "observed_bilateral_row_count": 9433,
+        "recorded_value_1000usd": "3700901.735000000000000000"
+      },
+      {
+        "year": 2024,
+        "country_code": 736,
+        "direction": "export",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      },
+      {
+        "year": 2024,
+        "country_code": 736,
+        "direction": "import",
+        "source_country_name": null,
+        "scope_status": null,
+        "source_iso3": null,
+        "observed_area_direction": false,
+        "observed_product_market_rows": 0,
+        "observed_bilateral_row_count": 0,
+        "recorded_value_1000usd": null
+      }
+    ]
+  },
+  "interpretation_limits": [
+    "Zero row counts mean no recorded market rows in that selected source area/year/direction, not verified zero trade.",
+    "Absent recorded values remain null.",
+    "BACI 736 is former Sudan including a different historical territory; do not stitch it to modern 729 by ISO3 abbreviation or describe the result as fixed-border growth.",
+    "The full curated scope includes 23 source areas across history, not 23 modern countries."
+  ]
+}

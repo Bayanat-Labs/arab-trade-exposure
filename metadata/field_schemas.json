@@ -1,0 +1,604 @@
+{
+  "flows": [
+    {
+      "name": "year",
+      "type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "hs6",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_is_standard_hs6",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "exporter_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "importer_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "exporter_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_name_ar",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_name_ar",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_in_scope",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "importer_in_scope",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "exporter_current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "importer_current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "exporter_scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "v_raw",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "q_raw",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "trade_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "quantity_tonnes",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "quantity_missing",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "quantity_positive",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "source_record_ordinal",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "source_record_id",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_archive_sha256",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_version",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_member",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_member_crc32",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "exposures": [
+    {
+      "name": "year",
+      "type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "hs6",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "direction",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_is_standard_hs6",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "country_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "total_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "observed_partner_count",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "partner_count",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "top1_partner_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "top1_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "top3_partner_codes",
+      "type": "list<element: int32>",
+      "nullable": true
+    },
+    {
+      "name": "top3_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "hhi",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "intra_scope_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "intra_current_member_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "positive_quantity_rows",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "missing_quantity_rows",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "nonpositive_quantity_rows",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "quantity_covered_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "source_version",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_archive_sha256",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_historical_predecessor",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "total_value_usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "top1_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "top3_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "effective_partner_count",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "intra_scope_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "intra_current_member_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "quantity_value_coverage_share",
+      "type": "double",
+      "nullable": true
+    }
+  ],
+  "global_context": [
+    {
+      "name": "year",
+      "type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "hs6",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_is_standard_hs6",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "global_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "observed_supplier_count",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "supplier_count",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "top1_exporter_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "top1_exporter_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "top3_exporter_codes",
+      "type": "list<element: int32>",
+      "nullable": true
+    },
+    {
+      "name": "top3_exporter_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "global_supplier_hhi",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "intra_scope_exporter_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "current_member_exporter_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "source_version",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_archive_sha256",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "global_value_usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "global_effective_supplier_count",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "top1_exporter_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "top3_exporter_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "intra_scope_exporter_share",
+      "type": "double",
+      "nullable": true
+    },
+    {
+      "name": "current_member_exporter_share",
+      "type": "double",
+      "nullable": true
+    }
+  ],
+  "link_observation_changes": [
+    {
+      "name": "previous_year",
+      "type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "year",
+      "type": "int16",
+      "nullable": true
+    },
+    {
+      "name": "hs6",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_is_standard_hs6",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "exporter_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "importer_code",
+      "type": "int32",
+      "nullable": true
+    },
+    {
+      "name": "exporter_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "importer_scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "exporter_current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "importer_current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "present_previous",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "present_current",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "observation_change",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "previous_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "current_value_1000usd",
+      "type": "decimal128(38, 18)",
+      "nullable": true
+    },
+    {
+      "name": "source_version",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "source_archive_sha256",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "countries": [
+    {
+      "name": "country_code",
+      "type": "int64",
+      "nullable": true
+    },
+    {
+      "name": "country_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_iso3",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "name_ar",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "in_scope",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "current_member",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "scope_status",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_name_display",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "country_label_repaired",
+      "type": "bool",
+      "nullable": true
+    }
+  ],
+  "products": [
+    {
+      "name": "hs6",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "name": "product_is_standard_hs6",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "product_is_unspecified",
+      "type": "bool",
+      "nullable": true
+    },
+    {
+      "name": "product_has_classified_detail",
+      "type": "bool",
+      "nullable": true
+    }
+  ]
+}

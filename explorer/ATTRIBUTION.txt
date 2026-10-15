@@ -1,0 +1,6 @@
+Source: CEPII, BACI database, HS92, version 202601; archive release date 22 January 2026. Downloaded 2026-10-15. Reused under Etalab Open Licence 2.0. Bayanat Labs selected source areas, added display metadata and computed analytical tables. CEPII does not endorse this derived release.
+
+BACI: https://www.cepii.fr/DATA_DOWNLOAD/baci/doc/baci_webpage.html
+License: https://raw.githubusercontent.com/etalab/licence-ouverte/master/open-licence.txt
+
+Gaulier, G. and Zignago, S. (2010). BACI: International Trade Database at the Product-Level. The 1994–2007 Version. CEPII Working Paper No. 2010-23. https://www.cepii.fr/pdf_pub/wp/2010/wp2010-23.pdf
