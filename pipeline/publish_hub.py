@@ -78,7 +78,10 @@ def publish(output,explorer):
     if exists and not state.get('space_created'):
         raise ValueError('Space repo already exists outside this build publication state')
     if not exists:
-        api.create_repo(REPO,repo_type='space',space_sdk='docker',private=True)
+        # The explorer is a self-contained static app. DuckDB-Wasm queries the
+        # immutable public data tag in the visitor's browser, without a server
+        # or a paid organization compute plan.
+        api.create_repo(REPO,repo_type='space',space_sdk='static',private=True)
         state['space_created']=True;save(state_path,state)
     if not state.get('space_staged'):
         info=api.upload_folder(repo_id=REPO,repo_type='space',folder_path=explorer,ignore_patterns=['__pycache__/**','*.pyc','.cache/**'],commit_message='Release audited Arab Trade Exposure explorer0.1.0')

@@ -1,0 +1,70 @@
+{
+  "package": "@duckdb/duckdb-wasm",
+  "version": "1.32.0",
+  "npm_tarball": "https://registry.npmjs.org/@duckdb/duckdb-wasm/-/duckdb-wasm-1.32.0.tgz",
+  "npm_integrity": "sha512-IewXTNYEjsZCPE9weUWgtjGxUlMRo7qhX0GF6tq/KjK8bnY+RAl4cyUdYUfcdzbyb4b9ZxPC+FOsCcxgaKFWMg==",
+  "npm_shasum": "199ebbca6c302eba7bb0a458aacd34ccf8518335",
+  "git_commit": "a20b8290e79e37a7b914e62621aa412d69ba95fc",
+  "core_version": "v1.4.3",
+  "bundle_format": "esm",
+  "worker": "single-threaded EH",
+  "dependencies": {
+    "apache-arrow": "17.0.0",
+    "esbuild": "0.28.2"
+  },
+  "files": {
+    "LICENSE-apache-arrow.txt": {
+      "bytes": 110423,
+      "sha256": "229dbe29e4e1344e95172f6f3a4277ec0da5c7850cb03897c47f3a24b7afce08"
+    },
+    "LICENSE-duckdb-wasm.txt": {
+      "bytes": 1072,
+      "sha256": "7e17fd31249fa875cb3b1c5e05c6c3e99b75509f6a2804ca176c217834de1dcb"
+    },
+    "LICENSE-flatbuffers.txt": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "LICENSE-js-sha256.txt": {
+      "bytes": 1076,
+      "sha256": "0fea2e0cffe72ee17adc25c42e55daf5c87c6e9cd5b3362ee4213890bda0ee7c"
+    },
+    "LICENSE-tslib.txt": {
+      "bytes": 655,
+      "sha256": "210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751"
+    },
+    "LICENSE-wasm-feature-detect.txt": {
+      "bytes": 11341,
+      "sha256": "bcf29b4fd3ec2cb5f9d40a0866da446f6da62170d2ccedf4aeca9cf9406dd20c"
+    },
+    "LICENSE-web-worker.txt": {
+      "bytes": 11356,
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    "NOTICE-apache-arrow.txt": {
+      "bytes": 3032,
+      "sha256": "b62ea242642d3a18f1e29b0c1fe082415a6943fe158ee22b48cff3762f354009"
+    },
+    "duckdb-browser-bundle.mjs": {
+      "bytes": 435980,
+      "sha256": "6403750d52ae6025fc7f05c5bfa255735b16fa7573bc5daba7dd6fdf86d63a73"
+    },
+    "duckdb-browser-eh.worker.js": {
+      "bytes": 772759,
+      "sha256": "f8ab72b6b90b3ad83077d47426d4a99d5d9a4c7e07cba1a2be37d655adc7c1ab"
+    },
+    "duckdb-eh.wasm": {
+      "bytes": 34242586,
+      "sha256": "4c221bfa59c11f24dbd750e70c90b9252eca6eec5633936e6a2ec766e55fd879"
+    },
+    "notice-sources.json": {
+      "bytes": 1027,
+      "sha256": "dd1bd91bd1f677d262225425dbe85eebcf55d10ad80943508ea255dc97831a35"
+    },
+    "package.json": {
+      "bytes": 5716,
+      "sha256": "825e3d7ce1166ff2d6fa6bd4fe709f097b499b65a44c19cfa85191b3fcda9718"
+    }
+  },
+  "bundle_command": "cd vendor-build && npm ci --ignore-scripts --no-audit --no-fund && node rebuild.mjs"
+}

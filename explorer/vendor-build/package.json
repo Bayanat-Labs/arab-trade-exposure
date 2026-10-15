@@ -1,0 +1,10 @@
+{
+  "name": "bayanat-arab-trade-explorer-vendor",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "@duckdb/duckdb-wasm": "1.32.0",
+    "apache-arrow": "17.0.0",
+    "esbuild": "0.28.2"
+  }
+}

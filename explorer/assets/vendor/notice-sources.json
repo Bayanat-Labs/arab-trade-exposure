@@ -1,0 +1,26 @@
+[
+  {
+    "file": "/private/tmp/bayanat-static-license-audit/notices/wasm-feature-detect-LICENSE",
+    "source_url": "https://registry.npmjs.org/wasm-feature-detect/-/wasm-feature-detect-1.6.1.tgz",
+    "package": "wasm-feature-detect",
+    "version": "1.6.1",
+    "bytes": 11341,
+    "sha256": "bcf29b4fd3ec2cb5f9d40a0866da446f6da62170d2ccedf4aeca9cf9406dd20c"
+  },
+  {
+    "file": "/private/tmp/bayanat-static-license-audit/notices/web-worker-LICENSE",
+    "source_url": "https://registry.npmjs.org/web-worker/-/web-worker-1.2.0.tgz",
+    "package": "web-worker",
+    "version": "1.2.0",
+    "bytes": 11356,
+    "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+  },
+  {
+    "file": "/private/tmp/bayanat-static-license-audit/notices/js-sha256-LICENSE.txt",
+    "source_url": "https://registry.npmjs.org/js-sha256/-/js-sha256-0.11.1.tgz",
+    "package": "js-sha256",
+    "version": "0.11.1",
+    "bytes": 1076,
+    "sha256": "0fea2e0cffe72ee17adc25c42e55daf5c87c6e9cd5b3362ee4213890bda0ee7c"
+  }
+]
